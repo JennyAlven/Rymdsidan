@@ -1,0 +1,38 @@
+body {
+  background-image: url("wallpaper.jpg");
+  opacity:
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  color: lightgrey;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+h3 {
+  font-family: Arial, sans-serif;
+  font-weight: lighter;
+  color: grey;
+}
+
+p {
+  color: lightgrey;
+  margin-top: 5px;
+
+}
+
+.ruta {
+  width: 33%;
+
+}
+
+.box {
+  background-color: rgba(0,0,0,0.5);
+  padding: 5px;
+}
+
+img {
+  width: 100%;
+  padding-bottom: 0px;
+}
