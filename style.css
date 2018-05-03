@@ -30,11 +30,11 @@ p {
   font-size: 15px;
   line-height: 20px;
   white-space: nowrap;
-  width: 300px;
-  height: 130px;
+  width: 350px;
+  height: 30px;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 
 img {
@@ -44,8 +44,39 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
+.arrowDiv {
+  position: absolute;
+top: 100px;
+right: -100px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #000;
+    border-color: #fff;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-button {
+  background: #444;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
 .container {
   /* display: flex; */
 }
@@ -58,15 +89,30 @@ a {
 
 .ruta {
   display: flex;
+  width: 2000px;
 }
 
-.innerruta {
+.innerruta, .innerruta2, .innerruta3 {
   display: flex;
+  width: 2000px;
+}
+
+.innerruta img, .innerruta2 img, .innerruta3 img {
+  min-height: 179px;
+  max-height: 180px;
+  width: 100%;
 }
 
 .artikel {
   background-color: rgba(0,0,0,0.5);
   padding: 5px;
+}
+
+.HelArtikel {
+  background-color: black;
+  color: grey;
+  text-transform: uppercase;
+  font-family: sans-serif;
 }
 
 .bildbyline {
@@ -119,28 +165,44 @@ a {
   background-size: cover;
 }
 
+.ruta {
+  display: inline-block;
+  overflow-x: scroll;
+  width: 100%;
+  height: 400px;
+  overflow-y: hidden;
+}
 
 @media (max-width: 600px){
   h1 {
-    font-size: 30px;
+    font-size: 18px;
   }
+
+  h3 {
+    color: white;
+    padding-bottom: 0px;
+  }
+
   p {
     font-size: 15px;
+    width: 300px;
+
   }
-  .ruta {
+
+  .innerruta, .innerruta2, .innerruta3 {
     display: inline-block;
-    overflow-x: scroll;
-    width: 100%;
-    height: 400px;
-    overflow-y: hidden;
+    width: 7000px;
   }
-  .innerruta {
-    width: 2000px;
-  }
+
   .artikel {
     display: inline-block;
     overflow-x: scroll;
+    overflow-y: hidden;
     width: 300px;
   }
 
+  .innerruta img, .innerruta2 img, .innerruta3  img {
+    min-height: 149px;
+    max-height: 150px;
+    width: 100%;
 }
