@@ -1,5 +1,9 @@
 body {
-  background-image: url("wallpaper.png");
+<<<<<<< HEAD
+  background-image: url("wallpaper.jpg");
+=======
+  background-image: url("wallpaper.jpg");
+>>>>>>> master
   background-color: black;
 }
 
